@@ -1,0 +1,342 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merienda", cursive;
+}
+
+body {
+    background-color: #fff;
+    line-height: 1.8; 
+}
+
+/* Estilo do header */
+header {
+    width: 100%;
+    padding: 40px 0;
+    box-shadow: 0 2px 2px #ff6a6ac9;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+
+.interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.receita-maneira a {
+    text-decoration: none;
+}
+
+.receita-maneira p {
+    color: #7e5a00;
+    margin-left: 10px;
+}
+
+.chapeu-chefe a {
+    cursor: pointer;
+}
+
+.receita-maneira h1 {
+    color: #ff0000;
+    font-size: 25px;
+}
+
+.receita-maneira .sp-01 {
+    color: #008000;
+    font-size: 25px;
+}
+
+.nav01 {
+    position: relative; /* Permite usar z-index */
+    z-index: 10; /* Aumenta a prioridade de empilhamento da nav1 */
+}
+
+.nav01 ul {
+    list-style-type: none;
+}
+
+.nav01 ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.nav01 ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.nav01 ul li a:hover {
+    transform: scale(1.05);
+}
+
+.btn-01 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 23, 23);
+    color: rgb(255, 23, 23);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-01:hover {
+    background-color: rgb(255, 224, 224);
+}
+
+/* Media Query para responsividade */
+@media (max-width: 768px) {
+    .interface {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav01 ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Aqui começa o main */
+
+.imagem-fundo img {
+    width: 100%;
+}
+
+.separador {
+    height: 1px;
+    background-color: #ff0000;
+    margin: 20px 0;
+}
+
+.secçao-receitas h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #7e5a00;
+}
+
+.nav2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+    height: 320px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 4px rgba(1, 1, 1, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+}
+
+.box:hover {
+    box-shadow: 0 8px 16px rgba(248, 83, 83, 0.2);
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff0000;
+    transition: color 0.3s;
+}
+
+.nav2 a:hover {
+    color: #d90000;
+}
+
+.nav2 .box p {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+    .nav2 .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav2 .box {
+        width: 100%;
+    }
+}
+
+/* Estilos do vídeo */
+
+.video {
+    text-align: center;
+    text-decoration: none;
+}
+
+.video h2 {
+    color: #7e5a00;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+.btn-02 {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 23, 23);
+    color: rgb(255, 23, 23);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.btn-02:hover {
+    background-color: rgb(255, 224, 224);
+}
+
+/* Estilo do footer */
+footer {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+}
+
+/*-----------------------------------------------------------------*/
+
+/* CSS RECEITA DE CARNES, PEIXES, MASSAS E SOBREMESAS */
+
+.container {
+    display: flex; /* Usa flexbox para arranjar as divs lado a lado */
+    justify-content: flex-start; /* Mantém as divs próximas */
+    padding: 20px; /* Espaçamento interno da container */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    gap: 20px; /* Espaço entre as caixas */
+}
+
+.container h1 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Faz o título ocupar a largura total */
+    color: #7e5a00;
+}
+
+.box01 {
+    width: 500px; /* Largura da box01 */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.box02 {
+    width: 500px; /* Largura da box02 */
+    padding: 20px; /* Espaçamento interno */
+    width: 900px;
+}
+
+.box02 p {
+    text-indent: 60px;
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+    }
+
+    .box01, .box02 {
+        width: 100%; /* As divs ocuparão toda a largura em telas pequenas */
+        margin-bottom: 20px; /* Espaçamento entre as divs */
+    }
+}
+
+/* Estilo para a terceira div */
+
+.box03 {
+    width: calc(100% - 40px); /* Ajusta a largura para levar em conta o espaçamento */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px 20px 0; /* Espaço acima e nos lados */
+}
+
+.box03 .ingredientes, ul, .modo-preparo, ol {
+    margin-left: 20px;
+}
+
+.box03 .ingredientes {
+    color: #7e5a00;
+}
+
+.box03 ul {
+    margin-top: 20px;
+    text-align: justify; /* Justifica o texto */
+}
+
+.box03 .modo-preparo {
+    color: #7e5a00;
+}
+
+.box03 .modo-preparo {
+    margin-top: 20px;
+}
+
+.box03 ol {
+    margin-top: 20px;
+    text-align: justify; /* Justifica o texto */
+}
+
+/* CSS CONTATO */
+
+.borda-contato {
+    
+}
+
+.contato {
+    height: 700px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: larger;
+}
+
+.contato h1 {
+    color: #7e5a00;
+}
+
+.contato iframe {
+    margin-top: 50px;
+}
+
+
+
